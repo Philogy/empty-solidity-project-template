@@ -1,9 +1,10 @@
 require('dotenv').config()
+require('@nomiclabs/hardhat-ethers')
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-const accounts = process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : []
+const accounts = process.env.PRIV_KEY !== undefined ? [process.env.PRIV_KEY] : []
 
 module.exports = {
   solidity: {
